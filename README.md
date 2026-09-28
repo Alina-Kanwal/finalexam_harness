@@ -35,6 +35,7 @@ Sandbox = harness ka ek hissa, khaas taur pe "Constrain" wala verb — woh deewa
 Shayad "harness" aur "sandbox" mix ho gaye — farq yaad dilata hoon:
 Harness = poora box (loop + tools + context + control) — bada umbrella term.
 Sandbox = harness ka ek hissa, khaas taur pe "Constrain" wala verb — woh deewarein jo limit karti hain agent kahan kaam kar sakta hai.
+Misal: rule kehta hai "agent files edit kar sakta hai" (kya — allowed). Sandbox kehta hai "sirf apne workspace folder ke andar" (kahan — limit). Agar agent fool ho kar kisi doosri jagah edit karne ki koshish kare, rule usay rokta nahi (kyunke "edit karna" to allowed hai) — lekin sandbox rok deta hai, kyunke woh jagah uski hadd se bahar hai.
 
 
 
