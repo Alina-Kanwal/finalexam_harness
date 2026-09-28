@@ -36,6 +36,14 @@ Shayad "harness" aur "sandbox" mix ho gaye — farq yaad dilata hoon:
 Harness = poora box (loop + tools + context + control) — bada umbrella term.
 Sandbox = harness ka ek hissa, khaas taur pe "Constrain" wala verb — woh deewarein jo limit karti hain agent kahan kaam kar sakta hai.
 Misal: rule kehta hai "agent files edit kar sakta hai" (kya — allowed). Sandbox kehta hai "sirf apne workspace folder ke andar" (kahan — limit). Agar agent fool ho kar kisi doosri jagah edit karne ki koshish kare, rule usay rokta nahi (kyunke "edit karna" to allowed hai) — lekin sandbox rok deta hai, kyunke woh jagah uski hadd se bahar hai.
+//////////////////////////////////////////////////////////////////////Inform
+Agent ko kaam karne ke liye 3 tarah ki maloomat chahiye, aur har tarah ka apna ghar hai:
+1. Rules file — "hamesha sach baatein"
+Jaise: "ye project pnpm use karta hai, npm nahi." Ye baat kabhi nahi badalti, isliye ye ek file mein likh di jati hai jo agent har session shuru hone pe khud parh leta hai.
+2. Skills — "is khaas kaam ka tareeqa"
+Jaise: "har roz subah bugs check karne ka tareeqa." Ye sirf tab load hota hai jab wahi kaam aaye — hamesha nahi, sirf zaroorat par.
+3. Connectors — "kahan tak pahunch hai"
+Jaise: agent Gmail se connect hai ya nahi, GitHub se connect hai ya nahi. Ye batata hai agent kya-kya chhoo sakta hai.
 
 
 
