@@ -52,6 +52,7 @@ Har tool ek faisla hai jo agent ko lena hai — "ye sahi tool hai ya wo?" Jitne 
 Description mein 3 cheezein honi chahiye: (a) kya karta hai, (b) kaise use hota hai, (c) kitna result deta hai. Misal: "Customer ko email ya ID se dhoondta hai. Sirf 20 entries wapas deta hai (poori list nahi)." Agar sirf "customer tool" likha ho, agent ko andaza nahi hoga.
 3. Error mein agla kadam ho
 Jab tool fail ho, uska text (jo tum code mein khud likhti ho, jaise except block mein) sirf "kya ghalat hua" na bataye — "agla kya karna hai" bhi bataye. "Error 403" beat zaya karta hai. "403: repo scope maango" agla run khud theek kar leta hai — kyunke agent ka agla kadam usi error text se aata hai.
+//////////////////////////////////////////////////////////////////
 
 
 
