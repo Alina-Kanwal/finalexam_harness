@@ -32,6 +32,9 @@ Network fence — unattended runs ko chand allowed domains milte hain, ya bilkul
 Branch fence — unattended pushes sirf claude/ branches pe jaate hain, isliye main insaan ke gate ke peeche rehta hai — politely nahi, structurally.
 Harness = poora box (loop + tools + context + control) — bada umbrella term.
 Sandbox = harness ka ek hissa, khaas taur pe "Constrain" wala verb — woh deewarein jo limit karti hain agent kahan kaam kar sakta hai.
+Shayad "harness" aur "sandbox" mix ho gaye — farq yaad dilata hoon:
+Harness = poora box (loop + tools + context + control) — bada umbrella term.
+Sandbox = harness ka ek hissa, khaas taur pe "Constrain" wala verb — woh deewarein jo limit karti hain agent kahan kaam kar sakta hai.
 
 
 
