@@ -62,6 +62,26 @@ End wala hook = poore kaam ka aakhri saboot — jaise "sab tests pass hue?" — 
 Harness = poora system, sab kuch mil ke (loop, tools, permissions, hooks, sab). Bada umbrella.
 Hook = harness ka ek chhota tool, jo sirf ek kaam karta hai: automatically check karna, kisi khaas waqt par (pehle, baad, ya end mein).
 Pehle course mein "kaam ho gaya" sirf model ka apna daawa hota tha (khud bol deta "Done!"). Hooks isko badal dete hain — ab "done" wo cheez hai jo harness ne saboot ke sath check ki, na ke sirf model ne bola. To agent ka lafz "done" wahi rehta hai — bas ab uska haq milna harness ke saboot (test pass) par depend karta hai, sirf uski apni marzi par nahi.
+/////////////////////////////////////////////////////////////////////////////Typed Output
+Maan lo checker apni report likh kar deta hai: "Ye mostly theek hai, lekin kuch shak hai..." — ab agent isay kaise samjhe? PASS ya FAIL?
+Isliye checker ko ek fixed, sakht shakal mein jawab dena hota hai — jaise:
+{"verdict": "PASS", "risk": "low"}
+Sirf "PASS" ya "FAIL" — koi aur lafz allowed nahi. Fir code khud check karta hai ke jawab isi sakht shakal mein hai ya nahi.
+Agar checker koi ajeeb jawab de (jaise "MAYBE"), to system usay nahi maanta — seedha kisi insaan ke paas bhej deta hai.
+/////////////////////////////////////////////////////////////////////Correct (Recovery + Ratchet)
+Jab kuch ghalat ho, do alag kaam karne padte hain:
+1. Recovery (turant kaam) — is run ko bachana
+Agar masla temporary hai (network slow) → dobara try karo
+Agar masla permanent hai (permission hi nahi hai) → dobara try mat karo, insaan ko bhejo
+Agar agent khud apna kaam kharab kar chuka ho → checkpoint (pichla acha save point, jaise git commit) pe wapas jao
+2. Ratchet (hamesha ke liye kaam) — system ko sudharo
+Jab bhi koi ghalti hoti hai, sirf usay theek mat karo — harness mein hi aisa fix daal do ke wahi ghalti dobara ho hi na sake. Ratchet ka matlab: ek aisa tool jo sirf ek taraf ghumta hai, wapas nahi jata — har fix permanent ban jata hai.
+Kaunsi ghalti kahan fix hoti hai (4 types):
+Ghalti	Fix kahan
+Agent ko kuch pata nahi tha	rules file / skill (Concept 6)
+Agent ne aisa kaam kiya jo allowed hi nahi tha	permission rule / sandbox (Concept 4-5)
+Ghalat kaam ko "done" keh diya	hook / typed output (Concept 8-9)
+Sahi cheezein, ghalat tarteeb	task ko chota karo, structure badlo
 
 
 
