@@ -19,6 +19,18 @@ Rules ko human set krty hain
 Ye jawab tum khud dete ho, pehle se, likh kar — settings file mein (settings.json ya opencode.json). Harness khud koi faisla nahi leta ke "allow" ya "deny" — woh sirf tumhara likha hua rule padhta hai.
 Kaise select hota hai: Har rule ek action ke pattern se match karta hai. Jab agent koi action karna chahta hai (jaise git push origin claude/fix), harness check karta hai — "iska naam/pattern meri list mein kahin match karta hai?" Agar Bash(git push origin claude/*) allow list mein hai, to allow chalega. Agar koi rule match na kare, default fallback hota hai (aksar ask).
 Ek zaroori tarteeb: deny hamesha jeetta hai, phir ask, phir allow. Matlab agar ek broad allow rule hai lekin ek narrow deny rule bhi kisi cheez ko cover karta hai — deny wins, chahe allow list mein bhi likha ho.
+///////////////////////////////////////////////////////////////////Sandboxes: Nuksaan ko impossible bana do (Concept 5)
+Permission rules = kya karna allowed hai (ye action haan ya na)
+Sandbox = kis dayre (boundary) ke andar rehkar karna hai — sirf directory nahi, balke filesystem + network + branch teeno ka dayra.
+Tumhe pehla sandbox pehle se pata hai — worktree (pichle course se): har run ki apni copy hoti hai project folder ki, taake kuch bhi tumhari asal copy ko na chhue. 
+Permission rules = kya karna allowed hai (ye action haan ya na)
+Sandbox = kis dayre (boundary) ke andar rehkar karna hai — sirf directory nahi, balke filesystem + network + branch teeno ka dayra
+Harness iske gird teen aur deewarein lagata hai:
+Filesystem fence — agent sirf apne workspace mein likh sakta hai, kahin aur nahi. Home directory, doosre projects, system files — sirf mana nahi, pahunch se bahar.
+Network fence — unattended runs ko chand allowed domains milte hain, ya bilkul network nahi. Agar internet hi na ho, to koi injected instruction bhi code leak nahi kar sakti.
+Branch fence — unattended pushes sirf claude/ branches pe jaate hain, isliye main insaan ke gate ke peeche rehta hai — politely nahi, structurally.
+Harness = poora box (loop + tools + context + control) — bada umbrella term.
+Sandbox = harness ka ek hissa, khaas taur pe "Constrain" wala verb — woh deewarein jo limit karti hain agent kahan kaam kar sakta hai.
 
 
 
