@@ -2,6 +2,7 @@
 Teeno ek hi cheez hain: harness (loop + tools + permissions). Farq sirf ye hai kis ne banaya aur andar model fix hai ya badalne layak.
 Model = sirf intelligence. Ye baat kar sakta hai, sochsakta hai, jawab de sakta hai — lekin akela ye kuch kar nahi sakta. Na file khol sakta hai, na command chala sakta hai, na khud ko rok sakta hai.
 Agent = Model + Harness. Model ke gird jo box hai (loop, tools, permissions, checks) — wahi is dimagh ko haath-paar deta hai, aur usko reliable banata hai.
+model fool ho sakta hai aur galat kadam try kar sakta hai → harness us kadam ko execute hone se pehle pakad leta hai. Harness soch nahi raha, sirf har action pe deewar khara hai.
 ************************4 Parts of harness
 (1) chota loop jo model ko kaam pe rakhta hai, (2) tools jo woh use kar sakta hai, (3) context management (kya usko yaad rehta hai, kya bhool jata hai), (4) control (kya usko rokta hai).
 **************************Do halves: 
