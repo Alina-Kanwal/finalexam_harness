@@ -59,6 +59,10 @@ Pichle course ka maker-checker sirf beat khatam hone par check karta tha. Hook h
 Pehle wala hook = jo galtiyan pehle se maloom hain (jaise "is file ko mat chhuo") — unhe rok deta hai
 Baad wala hook = jo galtiyan sirf result dekh kar pata chalti hain (jaise code ka lint error) — unhe pakad kar agent ko wapas bhej deta hai, taake khud theek kare
 End wala hook = poore kaam ka aakhri saboot — jaise "sab tests pass hue?" — chahe har chhota step allowed tha
+Harness = poora system, sab kuch mil ke (loop, tools, permissions, hooks, sab). Bada umbrella.
+Hook = harness ka ek chhota tool, jo sirf ek kaam karta hai: automatically check karna, kisi khaas waqt par (pehle, baad, ya end mein).
+Pehle course mein "kaam ho gaya" sirf model ka apna daawa hota tha (khud bol deta "Done!"). Hooks isko badal dete hain — ab "done" wo cheez hai jo harness ne saboot ke sath check ki, na ke sirf model ne bola.
+
 
 
 
