@@ -82,6 +82,15 @@ Agent ko kuch pata nahi tha	rules file / skill (Concept 6)
 Agent ne aisa kaam kiya jo allowed hi nahi tha	permission rule / sandbox (Concept 4-5)
 Ghalat kaam ko "done" keh diya	hook / typed output (Concept 8-9)
 Sahi cheezein, ghalat tarteeb	task ko chota karo, structure badlo
+////////////////////////////////////////////////Deny list — jo kaam bilkul mumkin hi na ho (Concept 4)
+Fence — worktree ya sandbox ki boundary, aur gated branches (Concept 5)
+Saaf, described tools — sirf zaroori tools, achi description ke sath (Concept 6-7)
+Kam az kam ek blocking hook — jo kaam ko rok sake (Concept 8)
+Typed verdict — checker ka jawab machine-check honay layak shakal mein (Concept 9)
+Escalation path — ajeeb ya risky result insaan ke paas jaye (Concept 9)
+Log — har action record ho, cost samet
+Way back — checkpoints, taake failed run resume ho(mtlb faled hony say phly tak ka kaam save bi ho esa na ho k sub kharab), dobara shuru na ho (Concept 10)
+
 
 
 
