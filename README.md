@@ -44,6 +44,15 @@ Jaise: "ye project pnpm use karta hai, npm nahi." Ye baat kabhi nahi badalti, is
 Jaise: "har roz subah bugs check karne ka tareeqa." Ye sirf tab load hota hai jab wahi kaam aaye — hamesha nahi, sirf zaroorat par.
 3. Connectors — "kahan tak pahunch hai"
 Jaise: agent Gmail se connect hai ya nahi, GitHub se connect hai ya nahi. Ye batata hai agent kya-kya chhoo sakta hai.
+////////////////////////////////////////////////////////////////////////Concept 7 — AX (Agent Experience)
+Jaise ek app UX insaan ke liye design hoti hai, waise hi harness ke andar tools aur errors agent ke liye design hote hain — kyunke kaam ke waqt agent akela hota hai, kisi se pooch nahi sakta. Ye design teen jagah hoti hai:
+1. Kam tools rakho, zyada mat do
+Har tool ek faisla hai jo agent ko lena hai — "ye sahi tool hai ya wo?" Jitne zyada milte-julte tools honge, utni zyada ghalti ka chance. Agar insaan engineer khud confuse ho ke konsa tool sahi hai, to agent bhi confuse hoga.
+2. Tool ka description mukammal ho
+Description mein 3 cheezein honi chahiye: (a) kya karta hai, (b) kaise use hota hai, (c) kitna result deta hai. Misal: "Customer ko email ya ID se dhoondta hai. Sirf 20 entries wapas deta hai (poori list nahi)." Agar sirf "customer tool" likha ho, agent ko andaza nahi hoga.
+3. Error mein agla kadam ho
+Jab tool fail ho, uska text (jo tum code mein khud likhti ho, jaise except block mein) sirf "kya ghalat hua" na bataye — "agla kya karna hai" bhi bataye. "Error 403" beat zaya karta hai. "403: repo scope maango" agla run khud theek kar leta hai — kyunke agent ka agla kadam usi error text se aata hai.
+
 
 
 
