@@ -10,6 +10,32 @@ Upar wali picture dekho — inner harness woh hissa hai jo model banane wali com
 Poora course inhi paanch kaamon ke gird ghoomta hai — constrain (kya karne ki ijazat nahi), inform (kya jaanna zaroori hai), verify (kaam sahi hai ya nahi), correct (ghalti theek karo, phir dobara na ho), escalate (jab harness faisla na kar sake, insaan ko bhejo). Ek zaroori rule yaad rakhna: guardrail hamesha harness mein hota hai, prompt mein nahi — "please .env mat kholna" sirf ek request hai, ek deny rule ek deewar hai.
 *************************
 bas Claude Code aur Gemini CLI mein model fix hai (uski company ne bana ke die), jabke OpenCode mein wahi harness generic hai aur tum khud model plug karti ho.
+////////////////////////////////////////////Permission Rules — Allow, Ask, Deny
+Raat 3 baje agent koi command chalana chahta hai. Koi jaaga nahi hota check karne ke liye — isliye pehle se likha hua rule faisla karta hai. Har mature harness teen jawabon mein kaam karta hai:
+Allow — chup-chap chal jaye
+Ask — ruk jaye, insaan se haan lo
+Deny — kabhi nahi, chahe koi bhi maange
+Rules ko human set krty hain
+Ye jawab tum khud dete ho, pehle se, likh kar — settings file mein (settings.json ya opencode.json). Harness khud koi faisla nahi leta ke "allow" ya "deny" — woh sirf tumhara likha hua rule padhta hai.
+Kaise select hota hai: Har rule ek action ke pattern se match karta hai. Jab agent koi action karna chahta hai (jaise git push origin claude/fix), harness check karta hai — "iska naam/pattern meri list mein kahin match karta hai?" Agar Bash(git push origin claude/*) allow list mein hai, to allow chalega. Agar koi rule match na kare, default fallback hota hai (aksar ask).
+Ek zaroori tarteeb: deny hamesha jeetta hai, phir ask, phir allow. Matlab agar ek broad allow rule hai lekin ek narrow deny rule bhi kisi cheez ko cover karta hai — deny wins, chahe allow list mein bhi likha ho.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
