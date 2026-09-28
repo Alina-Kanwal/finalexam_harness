@@ -52,7 +52,15 @@ Har tool ek faisla hai jo agent ko lena hai — "ye sahi tool hai ya wo?" Jitne 
 Description mein 3 cheezein honi chahiye: (a) kya karta hai, (b) kaise use hota hai, (c) kitna result deta hai. Misal: "Customer ko email ya ID se dhoondta hai. Sirf 20 entries wapas deta hai (poori list nahi)." Agar sirf "customer tool" likha ho, agent ko andaza nahi hoga.
 3. Error mein agla kadam ho
 Jab tool fail ho, uska text (jo tum code mein khud likhti ho, jaise except block mein) sirf "kya ghalat hua" na bataye — "agla kya karna hai" bhi bataye. "Error 403" beat zaya karta hai. "403: repo scope maango" agla run khud theek kar leta hai — kyunke agent ka agla kadam usi error text se aata hai.
-//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////Verify & Correct
+"Beat" ka matlab hai — agent ka ek pura chakkar/run, ek baar shuru se lekar khatam hone tak.
+Beat = usi loop ka ek single run.
+Pichle course ka maker-checker sirf beat khatam hone par check karta tha. Hook har waqt check karta hai — ek code jo harness khud, automatically chalata hai, model ki marzi ke bagair. Teen jagah:
+Pehle wala hook = jo galtiyan pehle se maloom hain (jaise "is file ko mat chhuo") — unhe rok deta hai
+Baad wala hook = jo galtiyan sirf result dekh kar pata chalti hain (jaise code ka lint error) — unhe pakad kar agent ko wapas bhej deta hai, taake khud theek kare
+End wala hook = poore kaam ka aakhri saboot — jaise "sab tests pass hue?" — chahe har chhota step allowed tha
+
+
 
 
 
