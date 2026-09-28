@@ -8,6 +8,8 @@ Agent = Model + Harness. Model ke gird jo box hai (loop, tools, permissions, che
 Upar wali picture dekho — inner harness woh hissa hai jo model banane wali company (jaise Anthropic) khud banati hai: tool calling, context window size. Ye tum edit nahi kar sakti, sirf model choose kar ke select karti ho. Outer harness woh hissa hai jo tum khud set karti ho: permissions, hooks, checks, logs. Jab kabhi agent kuch ghalat kare, sabse pehla sawal ye hoga — masla inner mein hai (to model change karo) ya outer mein hai (to rule likho)?
 *************************Paanch verbs: 
 Poora course inhi paanch kaamon ke gird ghoomta hai — constrain (kya karne ki ijazat nahi), inform (kya jaanna zaroori hai), verify (kaam sahi hai ya nahi), correct (ghalti theek karo, phir dobara na ho), escalate (jab harness faisla na kar sake, insaan ko bhejo). Ek zaroori rule yaad rakhna: guardrail hamesha harness mein hota hai, prompt mein nahi — "please .env mat kholna" sirf ek request hai, ek deny rule ek deewar hai.
+*************************
+bas Claude Code aur Gemini CLI mein model fix hai (uski company ne bana ke die), jabke OpenCode mein wahi harness generic hai aur tum khud model plug karti ho.
 
 
 
