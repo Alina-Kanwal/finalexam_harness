@@ -129,6 +129,7 @@ Trace — ek run ki poori kahani, step by step
 Coupling — harness ka kisi ek model ki aadaton pe depend hona (bachna zaroori)
 Rule debt — har rule ka hamesha lagne wala kharcha (waqt/tokens), agar wo kaam na aaye to bojh ban jata hai
 Beat — agent ka ek pura chakkar, shuru se khatam tak (pichle course se)
+Deny rule ka matlab: ek aisa rule jo kehta hai "ye kaam kabhi mat karo" — chahe kuch bhi ho jaye. Ye sabse sakht jawab hai
 
 
 
