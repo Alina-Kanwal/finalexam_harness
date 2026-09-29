@@ -90,6 +90,12 @@ Typed verdict — checker ka jawab machine-check honay layak shakal mein (Concep
 Escalation path — ajeeb ya risky result insaan ke paas jaye (Concept 9)
 Log — har action record ho, cost samet
 Way back — checkpoints, taake failed run resume ho(mtlb faled hony say phly tak ka kaam save bi ho esa na ho k sub kharab), dobara shuru na ho (Concept 10)
+////////////////////////////////////////////////Observability (Dekh sakna)
+Ab tak jo bhi humne parha, sab usi waqt kaam karta hai (rok do, check karo). Observability iska matlab hai — harness ko yaad rehta hai usne kya kiya: kya chala, kya roka gaya, har run ka kharcha kitna hua. Ye zaroori kyun hai: agar deewar chup-chap kaam kare, tumhe kuch pata hi nahi chalega — raat 3 baje .env file ka rok jana sabse zaroori khabar hai, lekin sirf tab jab tum usay dekho.
+Teen aadatein:
+Har action ek jagah likho — kya chala, kya roka gaya, verdict, kharcha
+Failure ko loud karo — jab kuch roka jaye, tumhe khabar mile, tumhe khud dhoondna na pade
+Kharche ko signal ki tarah dekho — agar koi run achanak 3 guna kharcha kare, matlab wo bhatak gaya
 
 
 
