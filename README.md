@@ -96,6 +96,39 @@ Teen aadatein:
 Har action ek jagah likho — kya chala, kya roka gaya, verdict, kharcha
 Failure ko loud karo — jab kuch roka jaye, tumhe khabar mile, tumhe khud dhoondna na pade
 Kharche ko signal ki tarah dekho — agar koi run achanak 3 guna kharcha kare, matlab wo bhatak gaya
+//////////////////////////////////////////////////////////////////////////////////VOCABBES
+Harness — model ke gird ka poora box (loop, tools, context, control) jo usay agent banata hai
+Inner harness — model banane wali company ka banaya hua hissa (tum sirf choose karti ho)
+Outer harness — tum khud configure karti ho (rules, permissions, hooks)
+Constrain — kya karne ki ijazat nahi (permission/sandbox)
+Inform — kya jaanna zaroori hai (rules file, skills, connectors)
+Verify — kaam sahi hua ya nahi, check karna (hooks, typed output)
+Correct — ghalati theek karna, dobara na ho (recovery + ratchet)
+Escalate — jab harness faisla na kar sake, insaan ko bhejna
+Permission rule — allow/ask/deny wala faisla, har action ke liye
+Blast radius — agar ghalat ho jaye to kitna nuksaan hoga (isi se rule ki sakhti tay hoti hai)
+Sandbox — deewar jo limit karti hai agent kahan kaam kar sakta hai
+Filesystem fence — agent sirf apne workspace mein likh sakta hai
+Network fence — agent sirf allowed domains tak pahunch sakta hai (ya bilkul nahi)
+Branch fence — unattended pushes sirf claude/ branches pe jaate hain
+Prompt injection — text ke andar chhupi hui ghalat instruction (jaise bug report mein)
+Worktree — har run ki apni alag copy (project ki asal copy safe rehti hai)
+Rules file — hamesha-sach facts, ek dafa likho, har session khud parh leta hai
+Skills — khaas kaam ka tareeqa, sirf zaroorat par load hota hai
+Connectors — agent kahan tak pahunch sakta hai (Gmail, GitHub waghera)
+AX (Agent Experience) — tools aur errors ko agent ke liye design karna
+Hook = ek automatic check jo harness khud chalata hai, model se poochay bina — kaam se **pehle** (rok sakta hai), **baad** (error wapas bhej sakta hai), ya **end** pe (finish hone se mana kar sakta hai).
+Typed output — checker ka jawab fixed shakal mein (jaise sirf PASS/FAIL)
+Verdict — checker ka allowed jawab (PASS ya FAIL)
+Recovery — is waqt ke run ko bachana (retry ya checkpoint pe wapas jana)
+Checkpoint — pichla save point, jahan se dobara try ho sake
+Ratchet — permanent fix, taake wahi ghalati dobara kabhi na ho
+Failure class — ghalati ki type: context, constraint, verification, ya planning
+Observability — agent ne kya kiya, ye baad mein dekh sakna (log, trace, cost)
+Trace — ek run ki poori kahani, step by step
+Coupling — harness ka kisi ek model ki aadaton pe depend hona (bachna zaroori)
+Rule debt — har rule ka hamesha lagne wala kharcha (waqt/tokens), agar wo kaam na aaye to bojh ban jata hai
+Beat — agent ka ek pura chakkar, shuru se khatam tak (pichle course se)
 
 
 
